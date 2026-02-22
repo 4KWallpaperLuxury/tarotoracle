@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Tarot Oracle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0c0c1a;
+            --gold-primary: #D4AF69;
+            --gold-muted: #80D4AF69;
+            --text-white: #E6FFFFFF;
+            --text-dim: #4DFFFFFF;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(212, 175, 105, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: 'Jost', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            background-image:
+                radial-gradient(circle at 50% 10%, rgba(212, 175, 105, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 10% 80%, rgba(212, 175, 105, 0.03) 0%, transparent 40%);
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image:
+                radial-gradient(1px 1px at 10% 10%, #fff, transparent),
+                radial-gradient(1px 1px at 20% 50%, #fff, transparent),
+                radial-gradient(2px 2px at 40% 80%, #fff, transparent),
+                radial-gradient(1px 1px at 60% 20%, #fff, transparent),
+                radial-gradient(1px 1px at 80% 40%, #fff, transparent);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 60px 40px;
+            border-radius: 2px;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid rgba(212, 175, 105, 0.05);
+            pointer-events: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .app-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
+            color: var(--gold-primary);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .policy-title {
+            font-family: 'Jost', sans-serif;
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: var(--gold-primary);
+            margin: 40px 0 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "◆";
+            font-size: 14px;
+            margin-right: 15px;
+            color: var(--gold-muted);
+        }
+
+        p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        li {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        li::before {
+            content: "✧";
+            position: absolute;
+            left: 0;
+            color: var(--gold-primary);
+        }
+
+        a {
+            color: var(--gold-primary);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold-muted);
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        .date {
+            color: var(--gold-muted);
+            font-size: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+            display: block;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .app-name {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <header>
+            <div class="app-name">Tarot Oracle</div>
+            <div class="policy-title">Privacy Policy</div>
+        </header>
+
+        <span class="date">EFFECTIVE DATE: FEBRUARY 22, 2026</span>
+
+        <p>This Privacy Policy outlines how <strong>Tarot Oracle</strong> ("we", "our", or "the App") handles your data.
+            Our commitment is to provide a mystical and insightful experience while respecting your absolute right to
+            privacy.</p>
+
+        <hr>
+
+        <h2>1. Zero Data Collection</h2>
+        <p>We believe your spiritual journey is personal. <strong>Tarot Oracle</strong> does not collect, store, or
+            share any personally identifiable information (PII). We do not require account registration, names, email
+            addresses, or phone numbers to access our Service.</p>
+
+        <h2>2. AI Processing (Gemini)</h2>
+        <p>To provide personalized tarot interpretations, our App utilizes advanced Generative AI (Google Gemini). When
+            you interact with the oracle:</p>
+        <ul>
+            <li>Your specific questions and card selections are sent securely to the AI provider to generate the
+                reading.</li>
+            <li>No personal identity or device-specific identifiers are attached to these requests.</li>
+            <li>The AI provider does not receive information that could link your questions back to you as an
+                individual.</li>
+        </ul>
+
+        <h2>3. Local Device Storage</h2>
+        <p>For your convenience, some data is stored exclusively on your physical device:</p>
+        <ul>
+            <li><strong>Reading History:</strong> Your past readings are saved locally so you can revisit them.</li>
+            <li><strong>User Preferences:</strong> Settings like language selection, background music, and sound effect
+                toggles.</li>
+        </ul>
+        <p>This data never leaves your device and is permanently erased if you choose to uninstall the application.</p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>The App uses essential third-party services that may collect anonymized technical data for functional
+            purposes:</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a> (for app
+                stability and updates)</li>
+            <li>Google AdMob (for non-personalized advertising, if applicable)</li>
+        </ul>
+
+        <h2>5. Children's Sanctity</h2>
+        <p>The App is not directed toward children under the age of 13. We do not knowingly process data from minors, as
+            we do not collect data from any user regardless of age.</p>
+
+        <h2>6. Policy Evolutions</h2>
+        <p>We may refine this policy to reflect new features or legal requirements. Any updates will be published here
+            with an updated "Effective Date". Your continued use of the App signifies acceptance of these terms.</p>
+
+        <h2>7. Contact</h2>
+        <p>For any inquiries regarding this policy or your privacy within the App, please reach out to us at:</p>
+        <p style="text-align: center; letter-spacing: 1px;"><a
+                href="mailto:support@gungsastudio.com">support@gungsastudio.com</a></p>
+
+        <footer>
+            &copy; 2026 GUNGSA STUDIO. ALL RIGHTS RESERVED.
+        </footer>
+    </div>
+</body>
+
+</html>
